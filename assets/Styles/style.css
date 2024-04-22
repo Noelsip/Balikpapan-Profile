@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Quicksand',sans-serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: "Open Sans" , "sans-serif";
+}
+
+h2,
+h3{
+    color: #00a2c6;
+}
+ /* !important dapat digunakan untuk memprioritaskan styling */
+
+footer{
+    padding: 20px;
+    color: white;
+    background-color: #00a2c6;
+
+    text-align: center;
+    font-weight: bold;
+}
+
+nav a{
+    font-size: 18px;
+    
+    font-weight: 400;
+    text-decoration: none;
+
+    color: white;
+}
+nav a:hover{
+    font-weight: bold;
+    /* kursor bold */
+}
+.profile header{
+    text-align: center;
+}
+
+.featured-image{
+    width: 100%;
+    max-height: 300px;
+
+    object-fit: cover;
+    object-position:center;
+}
+
+.profile img{
+    width: 200px;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0 ,0.2);
+    padding: 20px;
+    border-radius: 5px;
+    /* margin-top: 20px; */
+}
+
+.card-1{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0 ,0.2);
+    padding: 20px;
+    border-radius: 5px;
+    /* margin-top: 20px; */ /*--> Tidak digunakan lagi*/
+    height: 650px;
+}
+.jumbotron{
+    font-size: 20px;
+    padding: 60px;
+    background-color: #00c8eb;
+    text-align: center;
+    color: white;
+}
+nav ul{
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+nav li{
+    /* display: inline; */
+    list-style-type: none;
+    /* margin-right: 20px; */
+}
+
+nav {
+    background-color: #00a2c6;
+    padding: 5px;
+
+    position: sticky;
+    top: 0;
+}
+main{
+    padding: 20px;
+
+    /* overflow: auto;*/  /* ---> tidak digunakan lagi */
+    display: flex;
+    gap: 1.5rem;
+}
+#content{
+    /* float: left;
+    width: 75%; */ /* --> tidak digunakan lagi*/
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem ;
+}
+aside{
+    /* float: right;
+    width: 25%; */
+    /* padding-left: 20px; */
+    flex: 1;
+}
+
+@media screen  and (max-width: 1200px){
+    main{
+        flex-flow: column nowrap;
+    }
+
+    main aside{
+        align-self: center;
+    }
+}
+@media screen  and (max-width: 768px){
+    nav ul{
+        justify-content: center;
+    }
+    main aside{
+        align-self: stretch;
+    }
+}
+
+header{
+    display: inline;
+}
